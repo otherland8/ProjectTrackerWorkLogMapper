@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ProjectTrackerWorkLogMapper" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Url" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://work.synkarion.no:8090/jira/secure/</Value>
+    </Setting>
+    <Setting Name="LoginUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://work.synkarion.no:8090/jira/login.jsp</Value>
+    </Setting>
+    <Setting Name="ProjectID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">629</Value>
+    </Setting>
+    <Setting Name="Username" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
