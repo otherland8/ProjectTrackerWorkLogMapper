@@ -63,7 +63,7 @@ namespace ProjectTrackerWorkLogMapper.BusinessLayer
             DataTable actionsForWorkLogPeriod = Factory.GetActionsView().GetDataForPeriod(currentToken, currentToken.UserID, workLog.Date, workLog.Date.AddDays(1));
             if (WorkLogExists(actionsForWorkLogPeriod, workLog))
             {
-                throw new ArgumentException(String.Format("Action for task ID: {0} and already exists for {1}/{2}/{3}.", 
+                throw new ArgumentException(String.Format("Action for task ID: {0} already exists for {1}/{2}/{3}.", 
                     TaskID, workLog.Date.Month, workLog.Date.Day, workLog.Date.Year));
             }
 

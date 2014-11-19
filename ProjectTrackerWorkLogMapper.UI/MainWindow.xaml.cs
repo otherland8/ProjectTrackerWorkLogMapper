@@ -1,4 +1,5 @@
-﻿using ProjectTrackerWorkLogMapper.BusinessLayer;
+﻿using Microsoft.Win32;
+using ProjectTrackerWorkLogMapper.BusinessLayer;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -161,6 +162,54 @@ namespace ProjectTrackerWorkLogMapper.UI
                 pboxJiraPassword.Password = String.Empty;
                 pupCredentials.IsOpen = !pupCredentials.IsOpen;
             }
+        }
+
+        public void ImportFromFile(object sender, EventArgs e)
+        {
+            OpenFileDialog importFromFileDialog = new OpenFileDialog();
+            importFromFileDialog.DefaultExt = "*.jspa";
+            importFromFileDialog.Filter = "Java servlet page alias (*.jspa)|*.jspa|Microsoft Excel files (*.xls)|*.xls|All files (*.*)|*.*";
+            Nullable<bool> result = importFromFileDialog.ShowDialog();
+            if (result == true)
+            {
+                try
+                {
+                    svContent.Visibility = Visibility.Visible;
+                    string filePath = importFromFileDialog.FileName;
+                    WorkLogsToMap = new WorkLogMapper().GetWorkLogObjectsFromHTML("", filePath);
+                    if (WorkLogsToMap.Count > 0)
+                    {
+                        GetImportedFileDates();
+                        SaveActions();
+                        pbProgress.Visibility = Visibility.Hidden;
+                    }
+                    else
+                    {
+                        throw new ArgumentException(String.Format("No worklogs were found in file: {0}", filePath));
+                    }
+                }
+                catch (ArgumentException ex)
+                {
+                    MessageBox.Show(ex.Message, "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    tbContent.Text = String.Empty;
+                    svContent.Visibility = Visibility.Hidden;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(String.Format("An error has occured. Error message: {0}", ex.Message), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    tbContent.Text = String.Empty;
+                    svContent.Visibility = Visibility.Hidden;
+                }
+            }
+        }
+
+        private void GetImportedFileDates()
+        {
+            List<DateTime> result = new List<DateTime>();
+            WorkLogsToMap.ForEach(wl => result.Add(wl.Date));
+            result.Sort();
+            dtpStartDate.SelectedDate = result.FirstOrDefault();
+            dtpEndDate.SelectedDate = result.LastOrDefault();
         }
     }
 }

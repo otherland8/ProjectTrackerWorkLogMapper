@@ -19,6 +19,7 @@
             <Menu DockPanel.Dock="Top" Height="396" Margin="0,0,-191,0">
                 <MenuItem Header="Options">
                     <MenuItem Header="Change credentials" Click="CancelCredentialsPopUp"></MenuItem>
+                    <MenuItem Header="Import from file" Click="ImportFromFile"></MenuItem>
                 </MenuItem>
             </Menu>
         </DockPanel>
