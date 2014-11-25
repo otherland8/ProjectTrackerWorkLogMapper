@@ -60,6 +60,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="obj\Debug\App.g.cs" />
+    <Compile Include="obj\Debug\App.g.i.cs" />
+    <Compile Include="obj\Debug\MainWindow.g.cs" />
+    <Compile Include="obj\Debug\MainWindow.g.i.cs" />
+    <Compile Include="obj\Debug\ProjectTracjerWorkLogMapper.g.i.cs" />
+    <Compile Include="obj\Debug\ProjectTrackerWorkLogMapper.g.i.cs" />
+    <Compile Include="obj\Debug\ProjectTrackerWorkLogMapper.UI_Content.g.i.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -92,10 +102,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="obj\Debug\ProjectTrackerWorkLogMapper.UI.g.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectTrackerWorkLogMapper.UI.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\ProjectTrackerWorkLogMapper.UI.exe.config" />
+    <None Include="bin\Debug\ProjectTrackerWorkLogMapper.UI.vshost.exe.config" />
+    <None Include="bin\Debug\ProjectTrackerWorkLogMapper.UI.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\MainWindow.baml" />
+    <None Include="obj\Debug\ProjectTrackerWorkLogMapper.UI.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\ProjectTrackerWorkLogMapper.UI.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\ProjectTrackerWorkLogMapper.UI_MarkupCompile.cache" />
+    <None Include="obj\Debug\ProjectTrackerWorkLogMapper.UI_MarkupCompile.i.cache" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -115,6 +137,36 @@
       <Project>{6add5bf9-05c9-4083-873e-8a6a8f0fdf21}</Project>
       <Name>ProjectTrackerWorkLogMapper.BusinessLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Common.dll" />
+    <Content Include="bin\Debug\DataLayer.dll" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Resource Include="obj\Debug\ProjectTrackerWorkLogMapper.UI.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ProjectTrackerWorkLogMapper.UI.exe" />
+    <Content Include="obj\Debug\ProjectTrackerWorkLogMapper.UI.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Resource Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Resource Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\HtmlAgilityPack.dll" />
+    <Content Include="bin\Debug\HtmlAgilityPack.pdb" />
+    <Resource Include="bin\Debug\HtmlAgilityPack.xml" />
+    <Content Include="bin\Debug\ICB.Core.dll" />
+    <Content Include="bin\Debug\ICB.ObjectFactory.dll" />
+    <Content Include="bin\Debug\ICB.Shared.dll" />
+    <Content Include="bin\Debug\ICBDataTable.dll" />
+    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.BusinessLayer.dll" />
+    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.BusinessLayer.pdb" />
+    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.dll" />
+    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.pdb" />
+    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.UI.exe" />
+    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.UI.pdb" />
+    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.UI.vshost.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Logs\" />
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

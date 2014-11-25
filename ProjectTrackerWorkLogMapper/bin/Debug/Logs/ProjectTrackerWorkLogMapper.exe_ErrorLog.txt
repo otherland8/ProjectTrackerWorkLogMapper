@@ -1,0 +1,31 @@
+Log created on: 10/26/2014 11:29:50 AM
+2014/10/26 11:29:50:353
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=49872896;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:57:08 PM;Last modified=10/26/2014 11:29:10 AM;Last accessed=10/24/2014 1:29:00 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+

@@ -1,0 +1,1060 @@
+Log created on: 10/26/2014 10:34:21 AM
+2014/10/26 10:34:21:459
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60235776;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 10:30:02 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/26 10:36:53:040
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60121088;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 10:35:58 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/26 10:50:12:066
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60252160;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 10:37:03 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/26 10:50:17:832
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60649472;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 10:37:03 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/26 10:59:05:747
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=407124
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60329984;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 10:58:09 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:04:43:264
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60510208;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:03:23 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:06:25:671
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60289024;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:05:51 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:08:18:854
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60342272;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:07:04 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:13:51:370
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60317696;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:13:13 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:17:58:785
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60674048;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:15:56 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:20:29:765
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60342272;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:18:39 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:23:10:126
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60317696;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:22:24 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:27:20:174
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60194816;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:23:21 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:29:25:838
+SQL:Update Actions
+set LastEditOperatorID = @LastEditOperatorID
+, StatusID = @StatusID
+, Description = @Description
+, TimeFrom = @TimeFrom
+, TimeTo = @TimeTo
+, DurationMinutes = @DurationMinutes
+, Subject = @Subject
+, Txt = @Txt
+, ReportDuration = @ReportDuration
+where ActionID=425358
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=59924480;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:28:45 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+Error message: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+Stack trace: 
+   at System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DataLayer.SQLGateway.RunDeadlockSafeExecuteNonQuery(DbCommand cmd)
+   at DataLayer.SQLGateway.CustomQuery(String sqlQuery, V8Parameter[] parameters)
+   at ICB.Core.Action.UpdateAction(IToken token, Int32 ActionID, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:31:59:472
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60133376;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:29:34 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:34:41:204
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60305408;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:33:32 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/26 11:52:48:092
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60125184;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 11:52:25 AM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/26 12:09:41:234
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=59973632;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 12:09:22 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/26 12:11:50:894
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=60207104;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/26/2014 12:10:57 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 15:28:51:923
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=63860736;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 3:27:57 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 15:28:52:654
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=65884160;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 3:27:57 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 15:28:52:780
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=65884160;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 3:27:57 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 15:28:52:913
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=65884160;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 3:27:57 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:14:06:265
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=64004096;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 3:39:35 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:14:06:996
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=67067904;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 3:39:35 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:14:07:130
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=67076096;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 3:39:35 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:14:07:269
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=67076096;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 3:39:35 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:23:39:881
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=63913984;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:20:43 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:24:08:190
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=66076672;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:20:43 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:24:09:015
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=66244608;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:20:43 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:24:09:767
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=66281472;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:20:43 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:30:39:570
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=63946752;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:28:48 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:30:43:293
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=65814528;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:28:48 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:30:43:953
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=65814528;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:28:48 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:30:44:656
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=65814528;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:28:48 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:40:56:741
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=63983616;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:37:44 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:40:57:431
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=66809856;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:37:44 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:40:57:597
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=66891776;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:37:44 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:40:57:739
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=66891776;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:37:44 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:43:24:412
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=63811584;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:42:54 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:43:25:142
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=66891776;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:42:54 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:43:25:287
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=66899968;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:42:54 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+
+2014/10/27 16:43:25:425
+SQL:
+Update b
+set b.HoldedBy = @SessionID
+from Tasks a, BT_Projects b
+where a.TaskID = @ParentTaskID
+and a.ProjectID = b.ProjectID
+select ProjectID
+from Tasks
+where TaskID = @ParentTaskID
+System information:
+MachineName=VDI-004;UserName=a.cheshmedzhiev;UserDomainName=ICB;Memory for the process=66899968;OS version=Microsoft Windows NT 6.1.7601 Service Pack 1;.NET version=4.0.30319.18444
+EXE create time=10/15/2014 1:38:08 PM;Last modified=10/27/2014 4:42:54 PM;Last accessed=10/15/2014 1:38:08 PM
+
+Exception Type: System.IndexOutOfRangeException
+Error message: There is no row at position 0.
+Stack trace: 
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ICB.Core.Action.InsertAction(IToken token, DataSet ds)
+
+**************************************}
+

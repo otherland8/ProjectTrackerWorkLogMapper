@@ -1,0 +1,12 @@
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.dll.config
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.dll
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.pdb
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.dll
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.pdb
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.Migrations.InitialCreate.resources
+C:\Users\a.cheshmedzhiev\documents\visual studio 2013\Projects\ProjectTrackerWorkLogMapper\ProjectTrackerWorkLogMapper.DataLayer\obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.csproj.GenerateResource.Cache
