@@ -52,9 +52,6 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\TaskCode.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ITaskCodeRepository.cs" />
     <Compile Include="Repositories\TaskCodeRepository.cs" />
@@ -62,33 +59,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.dll.config" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.csproj.GenerateResource.Cache" />
-    <None Include="obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.csprojResolveAssemblyReference.cache" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201410241049429_InitialCreate.resx">
       <DependentUpon>201410241049429_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.Migrations.InitialCreate.resources" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\EntityFramework.dll" />
-    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
-    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
-    <Content Include="bin\Debug\EntityFramework.xml" />
-    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.dll" />
-    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.pdb" />
-    <Content Include="obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.dll" />
-    <Content Include="obj\Debug\ProjectTrackerWorkLogMapper.DataLayer.pdb" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\" />
-    <Folder Include="obj\Debug\TempPE\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -8,25 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/common.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/datalayer.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/entityframework.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/entityframework.sqlserver.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obj/debug/projecttrackerworklogmapper.ui.exe")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obj/debug/projecttrackerworklogmapper.ui.pdb")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obj/debug/temppe/properties.resources.designer.cs.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/htmlagilitypack.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/htmlagilitypack.pdb")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/icb.core.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/icb.objectfactory.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/icb.shared.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/icbdatatable.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/projecttrackerworklogmapper.businesslayer.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/projecttrackerworklogmapper.businesslayer.pdb")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/projecttrackerworklogmapper.datalayer.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/projecttrackerworklogmapper.datalayer.pdb")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/projecttrackerworklogmapper.ui.exe")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/projecttrackerworklogmapper.ui.pdb")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/projecttrackerworklogmapper.ui.vshost.exe")]
 
 

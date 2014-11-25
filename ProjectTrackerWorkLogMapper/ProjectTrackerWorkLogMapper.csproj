@@ -52,9 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="ProjectTrackerWorkLogMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.Designer.cs">
@@ -65,11 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="bin\Debug\ProjectTrackerWorkLogMapper.exe.config" />
-    <None Include="bin\Debug\ProjectTrackerWorkLogMapper.vshost.exe.config" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\ProjectTrackerWorkLogMapper.csprojResolveAssemblyReference.cache" />
     <None Include="packages.config" />
     <None Include="Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -82,37 +74,7 @@
       <Name>ProjectTrackerWorkLogMapper.BusinessLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\Common.dll" />
-    <Content Include="bin\Debug\DataLayer.dll" />
-    <Content Include="bin\Debug\EntityFramework.dll" />
-    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
-    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
-    <Content Include="bin\Debug\EntityFramework.xml" />
-    <Content Include="bin\Debug\HtmlAgilityPack.dll" />
-    <Content Include="bin\Debug\HtmlAgilityPack.pdb" />
-    <Content Include="bin\Debug\HtmlAgilityPack.xml" />
-    <Content Include="bin\Debug\ICB.Core.dll" />
-    <Content Include="bin\Debug\ICB.ObjectFactory.dll" />
-    <Content Include="bin\Debug\ICB.Shared.dll" />
-    <Content Include="bin\Debug\ICBDataTable.dll" />
-    <Content Include="bin\Debug\Logs\ProjectTrackerWorkLogMapper.exe_ErrorLog.txt" />
-    <Content Include="bin\Debug\Logs\ProjectTrackerWorkLogMapper.vshost.exe_ErrorLog.txt" />
-    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.BusinessLayer.dll" />
-    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.BusinessLayer.pdb" />
-    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.dll" />
-    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.DataLayer.pdb" />
-    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.exe" />
-    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.pdb" />
-    <Content Include="bin\Debug\ProjectTrackerWorkLogMapper.vshost.exe" />
-    <Content Include="obj\Debug\ProjectTrackerWorkLogMapper.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\ProjectTrackerWorkLogMapper.exe" />
-    <Content Include="obj\Debug\ProjectTrackerWorkLogMapper.pdb" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\" />
-    <Folder Include="obj\Debug\TempPE\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
