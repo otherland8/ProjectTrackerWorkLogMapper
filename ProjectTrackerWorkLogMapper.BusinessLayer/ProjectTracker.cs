@@ -26,6 +26,7 @@ namespace ProjectTrackerWorkLogMapper.BusinessLayer
     {
         private const int MINUTES_IN_AN_HOUR = 60;
         private const double WORK_DAY_START_HOUR = 9.0;
+        private const double LUNCH_BREAK_START_HOUR = 12.0;
         private const int ERROR_VALUE = -1;
 
 
@@ -79,6 +80,20 @@ namespace ProjectTrackerWorkLogMapper.BusinessLayer
             //Set the minimal date to be used for the new action "to" date
             DateTime minimalFreeDate = GetMinimalFreeDate(actionsForWorkLogPeriod, workLog.Date);
 
+            //if (minimalFreeDate.Hour < LUNCH_BREAK_START_HOUR && minimalFreeDate.Hour + workLog.TimeSpent > LUNCH_BREAK_START_HOUR)
+            //{
+            //    SaveNewAction(new WorkLog()
+            //    {
+            //        TimeSpent = LUNCH_BREAK_START_HOUR - minimalFreeDate.Hour,
+            //        Comment = workLog.Comment,
+            //        Date = workLog.Date,
+            //        IssueID = workLog.IssueID,
+            //        Title = workLog.Title
+            //    });
+            //    minimalFreeDate = minimalFreeDate.AddHours(workLog.TimeSpent - (LUNCH_BREAK_START_HOUR - minimalFreeDate.Hour) + 1);
+            //    workLog.TimeSpent -= (LUNCH_BREAK_START_HOUR - minimalFreeDate.Hour);
+            //}
+
             IAction Action = Factory.GetAction();
 
             DataSet newAction = Action.NewAction(currentToken, TaskID, ProjectID, minimalFreeDate, minimalFreeDate.AddHours(workLog.TimeSpent));
@@ -109,6 +124,7 @@ namespace ProjectTrackerWorkLogMapper.BusinessLayer
                     }
                 }
             }
+            //return minimalFreeDate.Hour == LUNCH_BREAK_START_HOUR ? minimalFreeDate.AddHours(1) : minimalFreeDate;
             return minimalFreeDate;
         }
 

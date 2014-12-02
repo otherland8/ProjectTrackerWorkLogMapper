@@ -71,7 +71,6 @@ namespace ProjectTrackerWorkLogMapper.BusinessLayer
             foreach (WorkLog log in list)
             {
                 if (String.Equals(log.IssueID, row.ChildNodes[ISSUEID_INDEX].Descendants("a").FirstOrDefault().InnerHtml) &&
-                    String.Equals(log.Comment, row.ChildNodes[COMMENT_INDEX].InnerHtml) &&
                     log.Date == Convert.ToDateTime(row.ChildNodes[DATE_INDEX].InnerHtml) &&
                     String.Equals(log.Title, row.ChildNodes[TITLE_INDEX].InnerHtml))
                 {
